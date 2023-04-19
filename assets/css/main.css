@@ -1956,6 +1956,9 @@ input, select, textarea {
 
 		}
 
+		
+		  
+
 /* Section/Article */
 
 	section.special, article.special {
@@ -2611,35 +2614,47 @@ input, select, textarea {
 
 /* Feature */
 
-	.feature {
-		position: relative;
-		height: 20em;
-	}
+.feature {
+	position: relative;
+	height: 20em;
+}
 
-		.feature:after {
-			clear: both;
-			content: '';
-			display: block;
-		}
+.feature:after {
+	clear: both;
+	content: '';
+	display: block;
+}
 
-		.feature h3, .feature h4, .feature h5, .feature h6 {
-			text-align: inherit;
-		}
+.feature h3,
+.feature h4,
+.feature h5,
+.feature h6 {
+	text-align: inherit;
+}
 
-		.feature .image {
-			display: inline-block;
-			height: 100%;
-			overflow: hidden;
-			position: relative;
-			width: 50%;
-		}
+.feature .image {
+	display: inline-block;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 50%;
+}
 
-			.feature .image img {
-				display: block;
-				min-height: 100%;
-				min-width: 100%;
-				position: absolute;
-			}
+.feature .image img {
+	display: block;
+	height: 100%;
+	/* Set the height of the image to 100% of its container */
+	width: auto;
+	/* Set the width of the image to auto so it scales proportionally */
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	/* Center the image within its container */
+}
+  
 
 		.feature:before {
 			background: blue;
@@ -2910,27 +2925,43 @@ input, select, textarea {
 
 /* Main */
 
-	#main {
-		padding: 6em 0 5em 0;
-		position: relative;
-		z-index: 1;
-	}
-
-		#main:before {
-			background: rgba(224, 224, 224, 0.75);
-			content: '';
-			height: 100%;
-			left: 50%;
-			position: absolute;
-			top: 0;
-			width: 1px;
-			z-index: -1;
-		}
-
-		#main header.major,
-		#main footer.major {
-			background: #ffffff;
-		}
+#main {
+	padding: 6em 0 5em 0;
+	position: relative;
+	z-index: 1;
+  }
+  
+  #main:before {
+	background: rgba(224, 224, 224, 0.75);
+	content: '';
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	top: 0;
+	width: 1px;
+	z-index: -1;
+  }
+  
+  #main header.major,
+  #main footer.major {
+	background: #ffffff;
+  }
+  
+  .my-text {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #333;
+	background-color: #f7f7f7;
+	padding: 1em;
+	border: 1px solid #ccc;
+	
+	text-align: center;
+	margin: 0 auto;
+	max-width: 62.5%;
+	z-index: 2;
+	position: relative;
+  }
+  
 
 /* Wide */
 
@@ -3306,3 +3337,22 @@ input, select, textarea {
 				}
 
 	}
+	.divider-section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	  
+	  .divider {
+		text-align: center;
+		margin: 0 1em;
+	  }
+	  
+	  .person-image {
+		width: 200px;
+		height: 200px;
+		object-fit: cover;
+		border-radius: 50%;
+		margin-bottom: 1em;
+	  }
+	  
