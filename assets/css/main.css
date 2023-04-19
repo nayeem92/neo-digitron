@@ -2706,7 +2706,7 @@ input, select, textarea {
 
 	#header {
 		background-attachment: scroll,							scroll,					fixed;
-		background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("../../images/header.jpg");
+		background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("images/lines.png");
 		background-position: bottom center,					top left,				center center;
 		background-repeat: repeat-x,						repeat,					no-repeat;
 		background-size: 3200px 460px,					auto,					cover;
@@ -2767,14 +2767,17 @@ input, select, textarea {
 			color: #ffffff;
 			cursor: default;
 			display: inline-block;
-			font-size: 3em;
-			height: 3.5em;
-			line-height: 3.5em;
-			margin: 0 0 0.75em 0;
+			font-size: 2em;
+			height: 5em;
+			line-height: 5em;
+			margin: 0 0 0.5em 0;
 			text-align: center;
-			width: 3.5em;
+			width: 5em;
 			border-radius: 5px;
-		}
+			border: 2px solid #ffffff; /* added white border */
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* added drop shadow */
+		  }
+		  
 		
 		
 		
