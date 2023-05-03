@@ -3339,25 +3339,26 @@ input, select, textarea {
 	}
 	.divider-section {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
-		align-items: flex-start;
 	  }
 	  
 	  .divider {
-		text-align: center;
-		margin: 0 1em;
-		min-height: 400px; /* set a minimum height for the divider */
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin: 0 20px;
+		width: 300px;
 	  }
 	  
 	  .person-image {
-		width: 200px;
-		height: 200px;
+		display: block;
+		margin: 0 auto;
+		width: 150px;
+		height: 150px;
 		object-fit: cover;
 		border-radius: 50%;
-		margin-bottom: 1em;
 	  }
 	  
 	  .client-logo a {
